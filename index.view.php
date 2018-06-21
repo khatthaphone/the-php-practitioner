@@ -15,15 +15,15 @@
 </head>
 <body>
   
-  <header>
+  <h1>Task For The Day</h1>
 
-    <ul>
-      <?php foreach($person as $key => $val) : ?>
-        <li><?= $key ?>:<?= $val ?></li>
-      <?php endforeach; ?>
-    </ul>
-
-  </header>
+  <ul>
+    <?php foreach ($task as $heading => $value): ?>
+      <li>
+        <strong><?= ucwords($heading); ?></strong>: <?= $value ?>
+      </li>
+    <?php endforeach; ?>
+  </ul>
 
 </body>
 </html>
