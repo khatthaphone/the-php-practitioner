@@ -2,12 +2,12 @@
 
 /**
  *  Step 12:
- *  Functions
+ *  Classes
 */
 
 class Task {
-  public $description;
-  public $completed = false;
+  protected $description;
+  protected $completed = false;
 
   public function __construct($description) {
     // Automatic trigger on instantiation
