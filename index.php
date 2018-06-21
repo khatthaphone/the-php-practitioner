@@ -7,11 +7,13 @@
 
 $animal = ['dog', 'cat'];
 
-function dumper($one, $two, $three) {
-  var_dump($one, $two, $three);
+function dd($data) {
+  echo "<pre>";
+  die(var_dump($data));
+  echo "</pre>";
 }
 
-dumper('hello', 'big', 'world');
+dd('Hello');
 
 // require 'index.view.php';
 
