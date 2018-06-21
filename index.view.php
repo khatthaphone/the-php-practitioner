@@ -18,8 +18,8 @@
   <header>
 
     <ul>
-      <?php foreach($names as $name) : ?>
-        <li><?= $name ?></li>
+      <?php foreach($person as $key => $val) : ?>
+        <li><?= $key ?>:<?= $val ?></li>
       <?php endforeach; ?>
     </ul>
 
