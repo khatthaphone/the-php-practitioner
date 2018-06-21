@@ -1,20 +1,34 @@
 <?php
 
 /**
- *  Step 10:
+ *  Step 12:
  *  Functions
 */
 
-$animal = ['dog', 'cat'];
+class Task {
+  public $description;
+  public $completed = false;
 
-function dd($data) {
-  echo "<pre>";
-  die(var_dump($data));
-  echo "</pre>";
+  public function __construct($description) {
+    // Automatic trigger on instantiation
+    $this->description = $description;
+  }
+
+  public function complete() {
+    $this->completed = true;
+  }
+
+  public function isComplete() {
+    return $this->completed;
+  }
 }
 
-dd('Hello');
+$tasks = [
+  new Task('Go to the store'),
+  new Task('Go to the school'),
+  new Task('Go to the concert')
+];
 
-// require 'index.view.php';
+require 'index.view.php';
 
 ?>
