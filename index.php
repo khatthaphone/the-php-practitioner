@@ -1,16 +1,18 @@
 <?php
 
 /**
-*  Booleans
+ *  Step 10:
+ *  Functions
 */
 
-$task = [
-  'title' => 'Finish homework',
-  'due' => 'today',
-  'assigned_to' => 'Jeffrey',
-  'completed' => false
-];
+$animal = ['dog', 'cat'];
 
-require 'index.view.php';
+function dumper($one, $two, $three) {
+  var_dump($one, $two, $three);
+}
+
+dumper('hello', 'big', 'world');
+
+// require 'index.view.php';
 
 ?>
