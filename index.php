@@ -4,16 +4,15 @@
  *  Step 13:
  *  Refactor and Collaborators
 */
+$database = require 'bootstrap.php';
 require 'Task.php';
-require 'database/Connection.php';
-require 'database/QueryBuilder.php';
 
-$pdo = Connection::make();
 
-$query = new QueryBuilder($pdo);
+$tasks = $database->selectAll('todos', 'Task');
 
-$tasks = $query->selectAll('todos');
+die(var_dump($tasks));
 
 require 'index.view.php';
+
 
 ?>
