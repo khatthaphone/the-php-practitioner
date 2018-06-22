@@ -1,33 +1,24 @@
 <?php
 
 /**
- *  Step 12:
- *  Classes
+ *  Step 13:
+ *  PDO
 */
+require 'Task.php';
 
-class Task {
-  protected $description;
-  protected $completed = false;
-
-  public function __construct($description) {
-    // Automatic trigger on instantiation
-    $this->description = $description;
-  }
-
-  public function complete() {
-    $this->completed = true;
-  }
-
-  public function isComplete() {
-    return $this->completed;
-  }
+try {
+  $pdo = new PDO('mysql:host=127.0.0.1;dbname=mytodo', 'root', '');
+} catch(PDOException $e) {
+  die($e->getMessage());
 }
 
-$tasks = [
-  new Task('Go to the store'),
-  new Task('Go to the school'),
-  new Task('Go to the concert')
-];
+$statement = $pdo->prepare('select * from todos');
+
+$statement->execute();
+
+$tasks = $statement->fetchAll(PDO::FETCH_CLASS, 'Task');
+
+// var_dump($tasks[0]->description);
 
 require 'index.view.php';
 
