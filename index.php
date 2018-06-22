@@ -2,15 +2,19 @@
 
 /**
  *  Step 13:
- *  PDO
+ *  Refactor and Collaborators
 */
+
 require 'Task.php';
 require 'functions.php';
+require 'database/Connection.php';
 
-$pdo = connectToDb();
+
+$pdo = Connection::make();
+
+
 $tasks = fetchAllTasks($pdo);
 
-// var_dump($tasks[0]->description);
 
 require 'index.view.php';
 
