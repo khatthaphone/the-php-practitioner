@@ -2,15 +2,12 @@
 
 /**
  *  Step 13:
- *  Refactor and Collaborators
+ *  Hide Your Secret Password
 */
-$database = require 'bootstrap.php';
-require 'Task.php';
 
+$database = require 'bootstrap.php';
 
 $tasks = $database->selectAll('todos', 'Task');
-
-die(var_dump($tasks));
 
 require 'index.view.php';
 
