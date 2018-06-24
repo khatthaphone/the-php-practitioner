@@ -9,28 +9,48 @@
     body {
       background: #E3E3E3;
       padding 2em;
+      font-family: 'consolas', 'Courier', 'Arial';
+    }
+    section {
+      display: block;
+      margin: auto;
+    }
+    h1 {
+      font-family: 'consolas', 'Courier', 'Arial';
       text-align: center;
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      text-align: left;
+      text-decoration: none;
+      font-family: 'consolas', 'Courier', 'Arial';
     }
   </style>
 </head>
 <body>
   
-  <h1>Task For The Day</h1>
+  <section>
+  
+    <h1>Task For The Day</h1>
 
-  <ul>
-    
-    <?php foreach($tasks as $task) : ?>
-      <li>
-        <?php if($task->completed) : ?>
-          <strike><?= $task->description; ?></strike>
-        <?php else : ?>
-          <?= $task->description; ?>
-        <?php endif ?>
+    <ul>
+      
+      <?php foreach($tasks as $task) : ?>
+        <li>
+          <?php if($task->completed) : ?>
+            <strike><?= $task->description; ?></strike>
+          <?php else : ?>
+            <?= $task->description; ?>
+          <?php endif ?>
 
-      </li>
-    <?php endforeach ?>
+        </li>
+      <?php endforeach ?>
 
-  </ul>
+    </ul>
+
+  </section>
 
 </body>
 </html>
