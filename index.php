@@ -1,7 +1,7 @@
 <?php
 
 /**
- *  Step 13:
+ *  Step 15:
  *  Hide Your Secret Password
 */
 
