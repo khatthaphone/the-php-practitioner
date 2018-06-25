@@ -1,15 +1,12 @@
 <?php
 
 /**
- *  Step 13:
- *  Hide Your Secret Password
+ *  Step 16:
+ *  Routing
 */
 
 $database = require 'bootstrap.php';
 
-$tasks = $database->selectAll('todos', 'Task');
-
-require 'index.view.php';
 
 
 ?>
