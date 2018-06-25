@@ -4,12 +4,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>About</title>
+  <title>PHP Practitioner</title>
+
+  <link rel="stylesheet" type="text/css" href="/pulic/css/style.css" />
+
 </head>
 <body>
 
-    <?php require('partials/nav.php'); ?>
-
-  <h1>About</h1>
-</body>
-</html>
+  <?php require('nav.php'); ?>
+  
