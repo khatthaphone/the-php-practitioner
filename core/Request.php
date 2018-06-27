@@ -6,7 +6,6 @@ class Request {
 
     return trim($_SERVER['REQUEST_URI'], '/');
 
-
   }
 
 }
