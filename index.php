@@ -1,5 +1,10 @@
 <?php
 
+/*
+* Step 18:
+* Array functions
+*/
+
 class Post {
   public $title;
   public $author;
