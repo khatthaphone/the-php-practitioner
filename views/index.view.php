@@ -2,22 +2,15 @@
   
   <section>
   
-    <h1>Task For The Day</h1>
+    <h1>Submit Your Name</h1>
 
-    <ul>
+    <form method="GET" action="/names">
       
-      <?php foreach($tasks as $task) : ?>
-        <li>
-          <?php if($task->completed) : ?>
-            <strike><?= $task->description; ?></strike>
-          <?php else : ?>
-            <?= $task->description; ?>
-          <?php endif ?>
+      <input name="name" />
 
-        </li>
-      <?php endforeach ?>
+      <button type="submit">Submit</button>
 
-    </ul>
+    </form>
 
   </section>
 

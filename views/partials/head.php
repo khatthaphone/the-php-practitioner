@@ -16,6 +16,10 @@
     h1 {
       text-align: center;
     }
+    form {
+      display: block;
+      margin: auto;
+    }
     section {
       display: block;
       margin: auto;

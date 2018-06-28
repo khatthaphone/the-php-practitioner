@@ -1,8 +1,8 @@
 <?php
 
 /**
- *  Step 17:
- *  Dry Up Your Views
+ *  Step 19:
+ *  Forms, Reques Types, and Routing
 */
 
 $database = require 'core/bootstrap.php';
