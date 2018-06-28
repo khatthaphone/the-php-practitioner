@@ -4,7 +4,7 @@
   
     <h1>Submit Your Name</h1>
 
-    <form method="GET" action="/names">
+    <form method="POST" action="/names">
       
       <input name="name" />
 
