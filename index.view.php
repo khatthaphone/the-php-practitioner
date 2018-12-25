@@ -32,7 +32,26 @@
     </li>
     
     <li>
-      <strong>Status: </strong> <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?>
+      <strong>Status: </strong>
+      
+      <!-- <?= $task['completed'] ? 'Complete' : 'Incomplete'; ?> -->
+
+      <!-- <?php
+
+      if ($task['completed']) {
+        echo '&#9989;';
+      } else {
+        echo 'Incomplete';
+      }
+
+      ?> -->
+
+      <?php if ($task['completed']) : ?>
+        <span class="icon">&#9989</span>
+      <?php else : ?>
+        <span class="icon">Incomplete</span>
+      <?php endif; ?>
+
     </li>
 
   </ul>
