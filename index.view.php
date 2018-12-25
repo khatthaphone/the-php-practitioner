@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>PHP Practitioner</title>
   <style>
-    body {
+    header {
       background: #E3E3E3;
       padding 2em;
       text-align: center;
@@ -16,6 +16,14 @@
 <body>
   
   <header>
+
+    <ul>
+      <?php
+        foreach($person as $feature) {
+          echo "<li>$feature</li>";
+        }
+      ?>
+    </ul>
 
     <ul>
       <?php foreach($person as $key => $val) : ?>
