@@ -1,16 +1,11 @@
 <?php
 
-/**
- *  Step 13:
- *  PDO
-*/
 require 'Task.php';
 require 'functions.php';
 
-$pdo = connectToDb();
-$tasks = fetchAllTasks($pdo);
+$pdo = connectDb();
 
-// var_dump($tasks[0]->description);
+$tasks = fetchAllTasks($pdo);
 
 require 'index.view.php';
 

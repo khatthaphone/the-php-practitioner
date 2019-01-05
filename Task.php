@@ -1,8 +1,14 @@
 <?php
 
 class Task {
+
   public $description;
-  public $completed = false;
-}
+  public $completed;
+
+  function complete() {
+    $completed = true;
+  }
+  
+} 
 
 ?>
